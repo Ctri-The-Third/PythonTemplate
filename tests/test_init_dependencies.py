@@ -13,3 +13,9 @@ def test_successful_imports(caplog):
 
     for log in caplog.records:
         assert log.levelno < logging.ERROR
+
+
+@pytest.mark.skip
+def test_auto_skipped_test():
+    """This is how you skip a test"""
+    assert False

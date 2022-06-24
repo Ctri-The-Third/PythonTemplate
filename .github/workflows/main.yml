@@ -44,8 +44,8 @@ jobs:
           pip install -r requirements.txt
       - name: Install hex helper
         run: |
-          wget https://github.com/Ctri-The-Third/ServiceHelpers/releases/download/v1.1.3/hex_helpers-1.1.3-py3-none-any.whl -O hex_helpers-1.1.3-py3-none-any.whl
-          pip install ./hex_helpers-1.1.3-py3-none-any.whl
+          wget https://github.com/Ctri-The-Third/ServiceHelpers/releases/download/v2.4.0/hex_helpers-2.4.0-py3-none-any.whl -O hex_helpers-latest-py3-none-any.whl
+          pip install ./hex_helpers-latest-py3-none-any.whl
       # Runs a set of commands using the runners shell
       - name: Test with pytest
         run: pytest -vv
